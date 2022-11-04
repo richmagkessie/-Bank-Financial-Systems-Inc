@@ -4,13 +4,20 @@ class BankDetails:
         self.account_number = account_number
         self.account_balance = account_balance
         self.interest_rate = interest_rate
+        
+     # You're supposed to write methods to set your objects attributes to the arguments
+    
+     # And write another method to get the state of the attributes
 
+# rename the CD class
 # certificate_of_deposit child class of BankDetails 
 class certificate_of_deposit(BankDetails):
     def __init__(self,  account_number, account_balance, account_maturity_date, interest_rate):
         super().__init__(account_number, account_balance, interest_rate) 
         self.account_maturity_date = account_maturity_date
+    # Create methods to set and get attributes
 
+# Create the function separately as a different python file
 # function to print users saving accounts bank details after users input
     def Savings(self):
         print("This is your Saving accounts details")      
